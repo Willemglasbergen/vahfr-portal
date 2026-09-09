@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#009ddc">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#009ddc"/>
+    <text x="600" y="440" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="210" font-weight="700" fill="#ffffff" letter-spacing="14">VAHFR</text>
+    <rect x="500" y="510" width="200" height="16" rx="8" fill="#f49200"/>
+  </svg>
+</template>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: oklch(0.985 0.006 95); color: oklch(0.23 0.012 250); font-family: "Hamburg", "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #009ddc; text-decoration: none; }
+  a:hover { color: #00719e; text-decoration: underline; }
+  summary::-webkit-details-marker { display: none; }
+  details[open] .os-plus { transform: rotate(45deg); }
+</style>
+</helmet>
+<div style="min-height: 100vh; display: flex; flex-direction: column;">
+
+  <header style="position: sticky; top: 0; z-index: 10; background: oklch(0.985 0.006 95 / 0.92); backdrop-filter: blur(10px); border-bottom: 1px solid oklch(0.9 0.008 250);">
+    <div style="max-width: 1040px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <img src="uploads/Logo-36f96fdc.png" alt="Vereniging van Albert Heijn Franchisenemers" style="height: 38px; width: auto; display: block;" />
+      </div>
+      <nav style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; font-size: 14px;">
+        <a href="#over" style="color: oklch(0.35 0.012 250);">Over de app</a>
+        <a href="#vereisten" style="color: oklch(0.35 0.012 250);">Vereisten</a>
+        <a href="VAHFR Handleiding.dc.html" style="color: oklch(0.35 0.012 250);">Handleiding</a>
+        <a href="#vragen" style="color: oklch(0.35 0.012 250);">Vragen</a>
+        <a href="#support" style="color: oklch(0.35 0.012 250);">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="flex: 1;">
+
+    <section style="max-width: 1040px; margin: 0 auto; padding: clamp(40px, 7vw, 88px) 20px clamp(32px, 5vw, 56px);">
+      <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: #e5f5fc; color: #00719e; font-size: 12.5px; font-weight: 500; letter-spacing: 0.01em; margin-bottom: 22px;">
+        <span style="width: 6px; height: 6px; border-radius: 50%; background: #f49200;"></span>
+        Alleen op uitnodiging
+      </div>
+      <h1 style="margin: 0 0 18px; font-size: clamp(32px, 6vw, 54px); line-height: 1.06; letter-spacing: -0.02em; font-weight: 700; text-wrap: pretty; max-width: 20ch;">Het portaal voor de VAHFR&nbsp;app</h1>
+      <p style="margin: 0 0 32px; font-size: clamp(16px, 2.2vw, 19px); line-height: 1.6; color: oklch(0.42 0.012 250); max-width: 58ch; text-wrap: pretty;">Met de VAHFR app registreren franchisenemers van Albert Heijn en hun medewerkers eenvoudig emballage en retouren. Op deze pagina vind je alles wat je nodig hebt om aan de slag te gaan.</p>
+      <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+        <a href="{{ appUrl }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 26px; border-radius: 12px; background: #009ddc; color: #fff; font-size: 16.5px; font-weight: 600; box-shadow: 0 6px 18px rgba(0, 157, 220, 0.3);" style-hover="background: #0082b8; color: #fff; text-decoration: none;">
+          Ga naar de app
+          <span style="font-size: 18px; line-height: 1;">&rarr;</span>
+        </a>
+        <a href="#uitnodiging" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 22px; border-radius: 12px; border: 1px solid oklch(0.86 0.01 250); background: #fff; color: oklch(0.3 0.012 250); font-size: 16px; font-weight: 500;" style-hover="border-color: oklch(0.7 0.02 250); color: oklch(0.2 0.012 250); text-decoration: none;">Nog geen uitnodiging?</a>
+        <a href="VAHFR Handleiding.dc.html" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 22px; border-radius: 12px; border: 1px solid oklch(0.86 0.01 250); background: #fff; color: oklch(0.3 0.012 250); font-size: 16px; font-weight: 500;" style-hover="border-color: oklch(0.7 0.02 250); color: oklch(0.2 0.012 250); text-decoration: none;">Handleiding</a>
+      </div>
+    </section>
+
+    <section id="over" style="max-width: 1040px; margin: 0 auto; padding: clamp(28px, 4vw, 48px) 20px; scroll-margin-top: 80px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px;">
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: 26px;">
+          <h2 style="margin: 0 0 10px; font-size: 15px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(0.55 0.012 250);">Wat doet de app</h2>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);">Emballage en retouren registreren op de winkelvloer: scannen, aantallen invoeren en direct verwerken. Geen papier, geen dubbele administratie.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: 26px;">
+          <h2 style="margin: 0 0 10px; font-size: 15px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(0.55 0.012 250);">Voor wie</h2>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);">Franchisenemers van Albert Heijn en de medewerkers die zij uitnodigen. De app is niet openbaar beschikbaar.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: 26px;">
+          <h2 style="margin: 0 0 10px; font-size: 15px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(0.55 0.012 250);">Ontwikkelaar</h2>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);">Gebouwd en onderhouden door <a href="https://www.outlinesolutions.nl" target="_blank" rel="noopener">Outline Solutions</a> in Zwolle.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="stappen" style="max-width: 1040px; margin: 0 auto; padding: clamp(28px, 4vw, 48px) 20px; scroll-margin-top: 80px;">
+      <h2 style="margin: 0 0 6px; font-size: clamp(22px, 3.2vw, 30px); font-weight: 700; letter-spacing: -0.01em;">Hoe werkt het</h2>
+      <p style="margin: 0 0 28px; font-size: 16px; line-height: 1.6; color: oklch(0.48 0.012 250); max-width: 52ch;">In drie stappen ben je klaar om te registreren.</p>
+      <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px;">
+        <li style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+          <span style="width: 30px; height: 30px; border-radius: 8px; background: #e5f5fc; color: #00719e; display: grid; place-items: center; font-size: 14px; font-weight: 700;">1</span>
+          <h3 style="margin: 0; font-size: 17px; font-weight: 600;">Ontvang je uitnodiging</h3>
+          <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: oklch(0.42 0.012 250);">Je krijgt per e-mail een uitnodiging met je persoonlijke toegang tot de app.</p>
+        </li>
+        <li style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+          <span style="width: 30px; height: 30px; border-radius: 8px; background: #e5f5fc; color: #00719e; display: grid; place-items: center; font-size: 14px; font-weight: 700;">2</span>
+          <h3 style="margin: 0; font-size: 17px; font-weight: 600;">Open de app en registreer</h3>
+          <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: oklch(0.42 0.012 250);">Gebruik de link in de mail om de app te openen en maak een eigen account aan.</p>
+        </li>
+        <li style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+          <span style="width: 30px; height: 30px; border-radius: 8px; background: #e5f5fc; color: #00719e; display: grid; place-items: center; font-size: 14px; font-weight: 700;">3</span>
+          <h3 style="margin: 0; font-size: 17px; font-weight: 600;">Registreer emballage en/of retouren</h3>
+          <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: oklch(0.42 0.012 250);">Beheer formulieren, scan barcodes direct vanuit de app, specificeer emballage en retouren en dien eenvoudig in.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="vereisten" style="max-width: 1040px; margin: 0 auto; padding: clamp(28px, 4vw, 48px) 20px; scroll-margin-top: 80px;">
+      <div style="background: oklch(0.96 0.008 250); border: 1px solid oklch(0.91 0.008 250); border-radius: 18px; padding: clamp(24px, 4vw, 36px);">
+        <h2 style="margin: 0 0 6px; font-size: clamp(22px, 3.2vw, 30px); font-weight: 700; letter-spacing: -0.01em;">Technische vereisten</h2>
+        <p style="margin: 0 0 26px; font-size: 16px; line-height: 1.6; color: oklch(0.48 0.012 250); max-width: 52ch;">De app werkt op de meeste zakelijke en priv&eacute;telefoons van na 2020.</p>
+        <dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px 28px;">
+          <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 16px; border-top: 1px solid oklch(0.88 0.008 250);">
+            <dt style="font-size: 13px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: oklch(0.55 0.012 250);">Toestel</dt>
+            <dd style="margin: 0; font-size: 16px; line-height: 1.55; color: oklch(0.25 0.012 250);">Samsung of iPhone uitgebracht na 2020</dd>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 16px; border-top: 1px solid oklch(0.88 0.008 250);">
+            <dt style="font-size: 13px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: oklch(0.55 0.012 250);">Besturingssysteem</dt>
+            <dd style="margin: 0; font-size: 16px; line-height: 1.55; color: oklch(0.25 0.012 250);">Android 11 of hoger &middot; iOS 15 of hoger</dd>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 16px; border-top: 1px solid oklch(0.88 0.008 250);">
+            <dt style="font-size: 13px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: oklch(0.55 0.012 250);">Verbinding</dt>
+            <dd style="margin: 0; font-size: 16px; line-height: 1.55; color: oklch(0.25 0.012 250);">Wifi of mobiel internet tijdens het registreren</dd>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 16px; border-top: 1px solid oklch(0.88 0.008 250);">
+            <dt style="font-size: 13px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: oklch(0.55 0.012 250);">Rechten</dt>
+            <dd style="margin: 0; font-size: 16px; line-height: 1.55; color: oklch(0.25 0.012 250);">Camera voor het scannen van barcodes</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="uitnodiging" style="max-width: 1040px; margin: 0 auto; padding: clamp(28px, 4vw, 48px) 20px; scroll-margin-top: 80px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: center; background: #00394f; border-radius: 18px; padding: clamp(26px, 4vw, 40px); color: oklch(0.96 0.006 250);">
+        <div>
+          <h2 style="margin: 0 0 10px; font-size: clamp(21px, 3vw, 27px); font-weight: 700; letter-spacing: -0.01em; color: #fff;">Uitnodiging aanvragen</h2>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #b8d9e6; max-width: 46ch;">Nog geen toegang? Vraag je uitnodiging aan via je franchisenemer of stuur ons een bericht met je naam, winkel en e-mailadres.</p>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="mailto:vahfr@outlinesolutions.nl?subject=Uitnodiging%20VAHFR%20app" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 22px; border-radius: 11px; background: #fff; color: #00394f; font-size: 16px; font-weight: 600;" style-hover="background: oklch(0.93 0.008 250); color: #002b3c; text-decoration: none;">Uitnodiging aanvragen</a>
+          <a href="tel:0853695022" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 22px; border-radius: 11px; border: 1px solid #2b6a85; color: #fff; font-size: 16px; font-weight: 500;" style-hover="border-color: #fff; color: #fff; text-decoration: none;">085 - 3695 022</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="vragen" style="max-width: 1040px; margin: 0 auto; padding: clamp(28px, 4vw, 48px) 20px; scroll-margin-top: 80px;">
+      <h2 style="margin: 0 0 28px; font-size: clamp(22px, 3.2vw, 30px); font-weight: 700; letter-spacing: -0.01em;">Veelgestelde vragen</h2>
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <details style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 14px; padding: 4px 20px;">
+          <summary style="list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; font-size: 16.5px; font-weight: 600;">Waarom kan ik de app niet in de App Store vinden?<span class="os-plus" style="flex: none; font-size: 20px; line-height: 1; color: #f49200; transition: transform 0.18s ease;">+</span></summary>
+          <p style="margin: 0 0 18px; font-size: 15.5px; line-height: 1.65; color: oklch(0.4 0.012 250); max-width: 62ch;">De VAHFR app is niet openbaar. Je gebruikt hem via de knop op deze pagina, met de toegang uit je uitnodiging.</p>
+        </details>
+        <details style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 14px; padding: 4px 20px;">
+          <summary style="list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; font-size: 16.5px; font-weight: 600;">Ik ben mijn inloggegevens kwijt<span class="os-plus" style="flex: none; font-size: 20px; line-height: 1; color: #f49200; transition: transform 0.18s ease;">+</span></summary>
+          <p style="margin: 0 0 18px; font-size: 15.5px; line-height: 1.65; color: oklch(0.4 0.012 250); max-width: 62ch;">Vraag een nieuwe uitnodiging aan bij je franchisenemer, of mail <a href="mailto:vahfr@outlinesolutions.nl">vahfr@outlinesolutions.nl</a>.</p>
+        </details>
+        <details style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 14px; padding: 4px 20px;">
+          <summary style="list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; font-size: 16.5px; font-weight: 600;">Werkt de app op een tablet?<span class="os-plus" style="flex: none; font-size: 20px; line-height: 1; color: #f49200; transition: transform 0.18s ease;">+</span></summary>
+          <p style="margin: 0 0 18px; font-size: 15.5px; line-height: 1.65; color: oklch(0.4 0.012 250); max-width: 62ch;">De app is ontworpen voor telefoons. Op een tablet werkt hij meestal wel, maar de weergave is daar niet op geoptimaliseerd.</p>
+        </details>
+        <details style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 14px; padding: 4px 20px;">
+          <summary style="list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; font-size: 16.5px; font-weight: 600;">Kan ik registreren zonder internet?<span class="os-plus" style="flex: none; font-size: 20px; line-height: 1; color: #f49200; transition: transform 0.18s ease;">+</span></summary>
+          <p style="margin: 0 0 18px; font-size: 15.5px; line-height: 1.65; color: oklch(0.4 0.012 250); max-width: 62ch;">Nee, voor het opslaan van een registratie is een actieve verbinding nodig. Zorg voor wifi of mobiel bereik in de winkel.</p>
+        </details>
+        <details style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 14px; padding: 4px 20px;">
+          <summary style="list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; font-size: 16.5px; font-weight: 600;">Kan ik een collega toegang geven?<span class="os-plus" style="flex: none; font-size: 20px; line-height: 1; color: #f49200; transition: transform 0.18s ease;">+</span></summary>
+          <p style="margin: 0 0 18px; font-size: 15.5px; line-height: 1.65; color: oklch(0.4 0.012 250); max-width: 62ch;">Franchisenemers kunnen medewerkers laten uitnodigen. Geef de naam en het e-mailadres door via <a href="mailto:vahfr@outlinesolutions.nl">vahfr@outlinesolutions.nl</a>.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="privacy" style="max-width: 1040px; margin: 0 auto; padding: clamp(28px, 4vw, 48px) 20px; scroll-margin-top: 80px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px;">
+        <div>
+          <h2 style="margin: 0 0 12px; font-size: clamp(22px, 3.2vw, 30px); font-weight: 700; letter-spacing: -0.01em;">Privacy &amp; gegevens</h2>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: oklch(0.42 0.012 250); max-width: 46ch; text-wrap: pretty;">De app verwerkt alleen gegevens die nodig zijn voor het registreren van emballage en retouren, plus je accountgegevens voor toegang.</p>
+        </div>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px;">
+          <li style="display: flex; gap: 12px; font-size: 15.5px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; margin-top: 7px; width: 6px; height: 6px; border-radius: 50%; background: #009ddc;"></span>Registraties zijn alleen inzichtelijk voor jouw winkel en de beheerder.</li>
+          <li style="display: flex; gap: 12px; font-size: 15.5px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; margin-top: 7px; width: 6px; height: 6px; border-radius: 50%; background: #009ddc;"></span>Gegevens worden binnen de EU opgeslagen en versleuteld verzonden.</li>
+          <li style="display: flex; gap: 12px; font-size: 15.5px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; margin-top: 7px; width: 6px; height: 6px; border-radius: 50%; background: #009ddc;"></span>Er wordt niets gedeeld met derden voor marketingdoeleinden.</li>
+          <li style="display: flex; gap: 12px; font-size: 15.5px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; margin-top: 7px; width: 6px; height: 6px; border-radius: 50%; background: #009ddc;"></span>Meer weten? Zie het <a href="https://www.outlinesolutions.nl/privacy-beleid" target="_blank" rel="noopener">privacybeleid</a> van Outline Solutions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="support" style="max-width: 1040px; margin: 0 auto; padding: clamp(28px, 4vw, 48px) 20px clamp(40px, 6vw, 72px); scroll-margin-top: 80px;">
+      <div style="border: 1px solid oklch(0.91 0.008 250); background: #fff; border-radius: 18px; padding: clamp(24px, 4vw, 36px); display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 26px;">
+        <div>
+          <h2 style="margin: 0 0 10px; font-size: clamp(22px, 3.2vw, 30px); font-weight: 700; letter-spacing: -0.01em;">Hulp nodig?</h2>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: oklch(0.42 0.012 250); max-width: 40ch;">Onze support helpt je op werkdagen tussen 09:00 en 17:00 uur. Vermeld je winkel en wat er misgaat.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <a href="mailto:vahfr@outlinesolutions.nl" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px; padding: 0 20px; border-radius: 12px; background: oklch(0.96 0.008 250); color: oklch(0.25 0.012 250); font-size: 16px; font-weight: 500;" style-hover="background: oklch(0.93 0.012 250); color: oklch(0.2 0.012 250); text-decoration: none;">
+            <span style="display: flex; flex-direction: column; gap: 2px;"><span style="font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: oklch(0.55 0.012 250);">E-mail</span>vahfr@outlinesolutions.nl</span>
+            <span style="font-size: 17px; color: #f49200;">&rarr;</span>
+          </a>
+          <a href="tel:0853695022" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px; padding: 0 20px; border-radius: 12px; background: oklch(0.96 0.008 250); color: oklch(0.25 0.012 250); font-size: 16px; font-weight: 500;" style-hover="background: oklch(0.93 0.012 250); color: oklch(0.2 0.012 250); text-decoration: none;">
+            <span style="display: flex; flex-direction: column; gap: 2px;"><span style="font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: oklch(0.55 0.012 250);">Telefoon</span>085 - 3695 022</span>
+            <span style="font-size: 17px; color: #f49200;">&rarr;</span>
+          </a>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://tally.so/r/jaVo4J" target="_blank" rel="noopener" style="flex: 1 1 180px; display: flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 18px; border-radius: 12px; background: #009ddc; color: #fff; font-size: 15.5px; font-weight: 600; text-align: center;" style-hover="background: #0082b8; color: #fff; text-decoration: none;">Bug of fout melden</a>
+            <a href="https://tally.so/r/kdPNb6" target="_blank" rel="noopener" style="flex: 1 1 180px; display: flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 18px; border-radius: 12px; background: #f49200; color: #fff; font-size: 15.5px; font-weight: 600; text-align: center;" style-hover="background: #d67f00; color: #fff; text-decoration: none;">Vraag of suggestie</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="border-top: 1px solid oklch(0.9 0.008 250); background: oklch(0.97 0.008 95);">
+    <div style="max-width: 1040px; margin: 0 auto; padding: 32px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; align-items: start;">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 14px;">
+        <img src="uploads/Logo-36f96fdc.png" alt="Vereniging van Albert Heijn Franchisenemers" style="height: 34px; width: auto; display: block;" />
+      </div>
+      <div style="font-size: 13.5px; line-height: 1.7; color: oklch(0.45 0.012 250);">
+        Burgemeester Drijbersingel 51<br />8021 JB Zwolle<br />KvK 54745284
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px; font-size: 13.5px; line-height: 1.7;">
+        <a href="https://www.outlinesolutions.nl" target="_blank" rel="noopener">outlinesolutions.nl</a>
+        <a href="https://www.outlinesolutions.nl/privacy-beleid" target="_blank" rel="noopener">Privacybeleid</a>
+        <a href="https://www.outlinesolutions.nl/algemene-voorwaarden" target="_blank" rel="noopener">Algemene voorwaarden</a>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px;">
+        <a href="https://www.outlinesolutions.nl" target="_blank" rel="noopener" style="display: inline-block;"><img src="https://static.wixstatic.com/media/c38ff0_12f937b2c37245a9a436b7e0bab3c73c~mv2.png/v1/fill/w_184,h_27,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/_edited.png" alt="Outline Solutions" style="height: 22px; width: auto; display: block;" /></a>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 1.6; color: oklch(0.58 0.012 250);">VAHFR &middot; versie 1.0<br />&copy; {{ year }} Outline Solutions</div>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;appUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;App&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const url = (this.props.appUrl || "").trim();
+    return {
+      appUrl: url || "#",
+      year: new Date().getFullYear()
+    };
+  }
+}
+</script>
+</body>
+</html>

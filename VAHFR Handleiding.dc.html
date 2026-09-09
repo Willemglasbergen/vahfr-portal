@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: oklch(0.985 0.006 95); color: oklch(0.23 0.012 250); font-family: "Hamburg", "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #009ddc; text-decoration: none; }
+  a:hover { color: #00719e; text-decoration: underline; }
+</style>
+</helmet>
+<div style="min-height: 100vh; display: flex; flex-direction: column;">
+
+  <header style="position: sticky; top: 0; z-index: 10; background: oklch(0.985 0.006 95 / 0.92); backdrop-filter: blur(10px); border-bottom: 1px solid oklch(0.9 0.008 250);">
+    <div style="max-width: 900px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <img src="uploads/Logo-36f96fdc.png" alt="VAHFR" style="height: 38px; width: auto; display: block;">
+      <nav style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; font-size: 14px;">
+        <a href="#help" style="color: oklch(0.35 0.012 250);">Hulp nodig?</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="flex: 1; max-width: 900px; margin: 0 auto; padding: 0 20px; width: 100%; box-sizing: border-box;">
+
+    <section style="padding: clamp(36px, 6vw, 72px) 0 clamp(24px, 4vw, 40px);">
+      <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: #e5f5fc; color: #00719e; font-size: 12.5px; font-weight: 500; margin-bottom: 20px;">
+        <span style="width: 6px; height: 6px; border-radius: 50%; background: #f49200;"></span>
+        Handleiding
+      </div>
+      <h1 style="margin: 0 0 16px; font-size: clamp(32px, 6vw, 50px); line-height: 1.07; letter-spacing: -0.02em; font-weight: 700; text-wrap: pretty;">Zo werkt de VAHFR&nbsp;app</h1>
+      <p style="margin: 0; font-size: clamp(16px, 2.2vw, 19px); line-height: 1.6; color: oklch(0.42 0.012 250); max-width: 56ch; text-wrap: pretty;">Van inloggen tot het indienen van een zending. Gebruik het overzicht hieronder om direct naar een onderdeel te springen.</p>
+    </section>
+
+    <nav style="padding: 0 0 clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; gap: 8px;">
+      <a href="#inloggen" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 15px; border-radius: 999px; border: 1px solid oklch(0.89 0.008 250); background: #fff; color: oklch(0.3 0.012 250); font-size: 14.5px;" style-hover="border-color: #009ddc; color: #00719e; text-decoration: none;">1. Inloggen</a>
+      <a href="#uitnodigen" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 15px; border-radius: 999px; border: 1px solid oklch(0.89 0.008 250); background: #fff; color: oklch(0.3 0.012 250); font-size: 14.5px;" style-hover="border-color: #009ddc; color: #00719e; text-decoration: none;">2. Gebruikers uitnodigen</a>
+      <a href="#overzicht" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 15px; border-radius: 999px; border: 1px solid oklch(0.89 0.008 250); background: #fff; color: oklch(0.3 0.012 250); font-size: 14.5px;" style-hover="border-color: #009ddc; color: #00719e; text-decoration: none;">3. Overzicht van zendingen</a>
+      <a href="#aanmaken" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 15px; border-radius: 999px; border: 1px solid oklch(0.89 0.008 250); background: #fff; color: oklch(0.3 0.012 250); font-size: 14.5px;" style-hover="border-color: #009ddc; color: #00719e; text-decoration: none;">4. Zending aanmaken</a>
+      <a href="#lading" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 15px; border-radius: 999px; border: 1px solid oklch(0.89 0.008 250); background: #fff; color: oklch(0.3 0.012 250); font-size: 14.5px;" style-hover="border-color: #009ddc; color: #00719e; text-decoration: none;">5. Lading toevoegen</a>
+      <a href="#indienen" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 15px; border-radius: 999px; border: 1px solid oklch(0.89 0.008 250); background: #fff; color: oklch(0.3 0.012 250); font-size: 14.5px;" style-hover="border-color: #009ddc; color: #00719e; text-decoration: none;">6. Zending indienen</a>
+      <a href="#zoeken" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 15px; border-radius: 999px; border: 1px solid oklch(0.89 0.008 250); background: #fff; color: oklch(0.3 0.012 250); font-size: 14.5px;" style-hover="border-color: #009ddc; color: #00719e; text-decoration: none;">7. Zoeken &amp; filteren</a>
+      <a href="#account" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 15px; border-radius: 999px; border: 1px solid oklch(0.89 0.008 250); background: #fff; color: oklch(0.3 0.012 250); font-size: 14.5px;" style-hover="border-color: #009ddc; color: #00719e; text-decoration: none;">8. Account</a>
+      <a href="#instellingen" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 15px; border-radius: 999px; border: 1px solid oklch(0.89 0.008 250); background: #fff; color: oklch(0.3 0.012 250); font-size: 14.5px;" style-hover="border-color: #009ddc; color: #00719e; text-decoration: none;">9. Instellingen</a>
+      <a href="#help" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 15px; border-radius: 999px; border: 1px solid oklch(0.89 0.008 250); background: #fff; color: oklch(0.3 0.012 250); font-size: 14.5px;" style-hover="border-color: #009ddc; color: #00719e; text-decoration: none;">10. Help</a>
+    </nav>
+
+    <section id="inloggen" style="padding: clamp(28px, 4vw, 44px) 0; border-top: 1px solid oklch(0.91 0.008 250); scroll-margin-top: 84px;">
+      <span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.08em; color: #a35f00; margin-bottom: 10px;">01</span>
+      <h2 style="margin: 0 0 18px; font-size: clamp(24px, 3.6vw, 33px); font-weight: 700; letter-spacing: -0.015em;">Inloggen</h2>
+      <p style="margin: 0 0 16px; font-size: 16.5px; line-height: 1.7; color: oklch(0.3 0.012 250); max-width: 64ch;">Gebruikers loggen in op VAHFR met hun eigen account.</p>
+      <p style="margin: 0 0 16px; font-size: 16.5px; line-height: 1.7; color: oklch(0.3 0.012 250); max-width: 64ch;">Gebruikers met de rol <strong style="font-weight: 600;">Vloermedewerker</strong> hebben geen authenticator-app nodig. Voor alle andere gebruikers is multi-factor authenticatie (MFA) verplicht. Zij gebruiken naast hun e-mail en wachtwoord een authenticator-app.</p>
+      <div style="display: flex; gap: 14px; padding: 18px 20px; border-radius: 14px; background: #e5f5fc; border: 1px solid oklch(0.88 0.03 235);">
+        <span style="flex: none; width: 6px; border-radius: 3px; background: #009ddc;"></span>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #00394f; max-width: 60ch;">Bij de registratie worden gebruikers voor wie MFA verplicht is direct gevraagd om VAHFR aan hun authenticator-app toe te voegen.</p>
+      </div>
+    </section>
+
+    <section id="uitnodigen" style="padding: clamp(28px, 4vw, 44px) 0; border-top: 1px solid oklch(0.91 0.008 250); scroll-margin-top: 84px;">
+      <span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.08em; color: #a35f00; margin-bottom: 10px;">02</span>
+      <h2 style="margin: 0 0 18px; font-size: clamp(24px, 3.6vw, 33px); font-weight: 700; letter-spacing: -0.015em;">Gebruikers uitnodigen</h2>
+      <p style="margin: 0 0 26px; font-size: 16.5px; line-height: 1.7; color: oklch(0.3 0.012 250); max-width: 64ch;">Managers en gebruikers op accountniveau kunnen nieuwe gebruikers uitnodigen. Ga hiervoor naar het overzicht <strong style="font-weight: 600;">Gebruikers</strong>. Er zijn twee manieren om gebruikers uit te nodigen.</p>
+
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: clamp(20px, 3vw, 28px);">
+          <h3 style="margin: 0 0 8px; font-size: 19px; font-weight: 600;">1. Geïmporteerde gebruikers uitnodigen</h3>
+          <p style="margin: 0 0 18px; font-size: 16px; line-height: 1.65; color: oklch(0.42 0.012 250);">Wanneer gebruikers al in VAHFR zijn geïmporteerd:</p>
+          <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; counter-reset: st;">
+            <li style="display: flex; gap: 14px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; width: 24px; height: 24px; border-radius: 7px; background: #e5f5fc; color: #00719e; display: grid; place-items: center; font-size: 13px; font-weight: 700;">1</span>Selecteer in de tabel de gebruikers die u wilt uitnodigen.</li>
+            <li style="display: flex; gap: 14px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; width: 24px; height: 24px; border-radius: 7px; background: #e5f5fc; color: #00719e; display: grid; place-items: center; font-size: 13px; font-weight: 700;">2</span>Klik op de knop om de selectie uit te nodigen.</li>
+            <li style="display: flex; gap: 14px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; width: 24px; height: 24px; border-radius: 7px; background: #e5f5fc; color: #00719e; display: grid; place-items: center; font-size: 13px; font-weight: 700;">3</span>Controleer in de pop-up welke gebruikers zijn geselecteerd.</li>
+            <li style="display: flex; gap: 14px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; width: 24px; height: 24px; border-radius: 7px; background: #e5f5fc; color: #00719e; display: grid; place-items: center; font-size: 13px; font-weight: 700;">4</span>Klik op <strong style="font-weight: 600;">Verstuur uitnodigingen</strong>.</li>
+          </ol>
+          <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.65; color: oklch(0.42 0.012 250);">Alle geselecteerde gebruikers ontvangen vervolgens per e-mail een uitnodiging om zich te registreren.</p>
+        </div>
+
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: clamp(20px, 3vw, 28px);">
+          <h3 style="margin: 0 0 8px; font-size: 19px; font-weight: 600;">2. Eén gebruiker uitnodigen</h3>
+          <p style="margin: 0 0 16px; font-size: 16px; line-height: 1.65; color: oklch(0.42 0.012 250);">Het is ook mogelijk om één gebruiker afzonderlijk uit te nodigen. Klik op <strong style="font-weight: 600;">Gebruiker</strong> en vul vervolgens in:</p>
+          <ul style="list-style: none; margin: 0 0 16px; padding: 0; display: flex; flex-direction: column; gap: 10px;">
+            <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: #009ddc;"></span>het e-mailadres;</li>
+            <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: #009ddc;"></span>selecteer de rol die deze gebruiker krijgt;</li>
+            <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: #009ddc;"></span>selecteer de winkel of groep waar de gebruiker aan moet worden gekoppeld;</li>
+            <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: #009ddc;"></span>eventueel een opmerking.</li>
+          </ul>
+          <p style="margin: 0 0 14px; font-size: 16px; line-height: 1.65; color: oklch(0.42 0.012 250);">Klik daarna op <strong style="font-weight: 600;">Verstuur uitnodiging</strong>. De gebruiker ontvangt per e-mail een uitnodiging en kan via deze uitnodiging een account registreren.</p>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: oklch(0.42 0.012 250);">Wanneer voor de betreffende rol multi-factor authenticatie verplicht is, wordt de gebruiker tijdens de registratie direct gevraagd om een authenticator-app in te stellen.</p>
+        </div>
+
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: clamp(20px, 3vw, 28px);">
+          <h3 style="margin: 0 0 8px; font-size: 19px; font-weight: 600;">Gebruikers beheren</h3>
+          <p style="margin: 0 0 18px; font-size: 16px; line-height: 1.65; color: oklch(0.42 0.012 250);">Klik op het pennetje om de gegevens van een gebruiker te bekijken. Vanuit dit scherm zijn twee acties beschikbaar.</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px;">
+            <div style="padding: 18px 20px; border-radius: 13px; background: oklch(0.97 0.008 250);">
+              <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(0.5 0.012 250);">Blokkeren</h4>
+              <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: oklch(0.3 0.012 250);">Klik op het knopje achter <strong style="font-weight: 600;">Status</strong>. De gebruiker wordt na enige tijd uitgelogd en heeft geen toegang meer, maar het account blijft bestaan.</p>
+            </div>
+            <div style="padding: 18px 20px; border-radius: 13px; background: oklch(0.97 0.008 250);">
+              <h4 style="margin: 0 0 8px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(0.5 0.012 250);">Verwijderen</h4>
+              <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: oklch(0.3 0.012 250);">Klik op <strong style="font-weight: 600;">Verwijder</strong>. De gebruiker wordt per direct definitief verwijderd en op korte termijn uitgelogd.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overzicht" style="padding: clamp(28px, 4vw, 44px) 0; border-top: 1px solid oklch(0.91 0.008 250); scroll-margin-top: 84px;">
+      <span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.08em; color: #a35f00; margin-bottom: 10px;">03</span>
+      <h2 style="margin: 0 0 18px; font-size: clamp(24px, 3.6vw, 33px); font-weight: 700; letter-spacing: -0.015em;">Overzicht van zendingen</h2>
+      <p style="margin: 0 0 20px; font-size: 16.5px; line-height: 1.7; color: oklch(0.3 0.012 250); max-width: 64ch;">Na het inloggen verschijnt het overzicht met zendingen. Hier kunnen bestaande zendingen worden bekeken en kan een nieuwe zending worden aangemaakt. Een zending bevat onder andere:</p>
+      <ul style="list-style: none; margin: 0 0 20px; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px;">
+        <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: #009ddc;"></span>een retourdatum;</li>
+        <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: #009ddc;"></span>één of meerdere ladingdragers;</li>
+        <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: #009ddc;"></span>bijlagen: vrachtbrief en specificatie;</li>
+        <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: #009ddc;"></span>eventuele opmerkingen.</li>
+      </ul>
+      <p style="margin: 0; font-size: 16.5px; line-height: 1.7; color: oklch(0.42 0.012 250); max-width: 64ch;">De retourdatum kan afwijken van de datum waarop de zending wordt ingediend.</p>
+    </section>
+
+    <section id="aanmaken" style="padding: clamp(28px, 4vw, 44px) 0; border-top: 1px solid oklch(0.91 0.008 250); scroll-margin-top: 84px;">
+      <span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.08em; color: #a35f00; margin-bottom: 10px;">04</span>
+      <h2 style="margin: 0 0 18px; font-size: clamp(24px, 3.6vw, 33px); font-weight: 700; letter-spacing: -0.015em;">Een zending aanmaken</h2>
+      <p style="margin: 0 0 26px; font-size: 16.5px; line-height: 1.7; color: oklch(0.3 0.012 250); max-width: 64ch; width: 609px; height: 90px">Een zending is opgebouwd als één formulier. Binnen dit formulier kunnen één of meerdere ladingdragers (kar of container) worden toegevoegd. Klik op <strong style="font-weight: 600;">Nieuw</strong> om een nieuwe zending aan te maken.</p>
+
+      <h3 style="margin: 0 0 16px; font-size: 20px; font-weight: 600;">Ladingdrager toevoegen</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px;">
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: 24px;">
+          <h4 style="margin: 0 0 10px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(0.55 0.012 250);">Barcode</h4>
+          <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);">Iedere ladingdrager heeft een barcode. Deze kan:</p>
+          <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li style="display: flex; gap: 12px; font-size: 15.5px; line-height: 1.6; color: oklch(0.35 0.012 250);"><span style="flex: none; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: #f49200;"></span>worden gescand met de barcodeknop;</li>
+            <li style="display: flex; gap: 12px; font-size: 15.5px; line-height: 1.6; color: oklch(0.35 0.012 250);"><span style="flex: none; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: #f49200;"></span>handmatig worden ingevoerd.</li>
+          </ul>
+        </div>
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: 24px;">
+          <h4 style="margin: 0 0 10px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(0.55 0.012 250);">Foto's</h4>
+          <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);">Afhankelijk van de instellingen zijn één of meerdere foto's verplicht, bijvoorbeeld van de voor- en achterkant van de ladingdrager.</p>
+          <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: oklch(0.45 0.012 250);">Wanneer een verplichte foto ontbreekt, wordt dit later bij de ladingdrager aangegeven.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: 24px;">
+          <h4 style="margin: 0 0 10px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(0.55 0.012 250);">Opmerking</h4>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);">Als laatste kan per ladingdrager een opmerking worden toegevoegd.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="lading" style="padding: clamp(28px, 4vw, 44px) 0; border-top: 1px solid oklch(0.91 0.008 250); scroll-margin-top: 84px;">
+      <span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.08em; color: #a35f00; margin-bottom: 10px;">05</span>
+      <h2 style="margin: 0 0 18px; font-size: clamp(24px, 3.6vw, 33px); font-weight: 700; letter-spacing: -0.015em;">Lading toevoegen</h2>
+      <p style="margin: 0 0 24px; font-size: 16.5px; line-height: 1.7; color: oklch(0.3 0.012 250); max-width: 64ch; width: 654px; height: 58px">Iedere ladingdrager bevat op zijn beurt lading. Binnen VAHFR wordt onderscheid gemaakt tussen <strong style="font-weight: 600;">emballage</strong> en <strong style="font-weight: 600;">retouren</strong>.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; margin-bottom: 24px;">
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: clamp(20px, 3vw, 26px);">
+          <h3 style="margin: 0 0 12px; font-size: 19px; font-weight: 600;">Emballage</h3>
+          <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: oklch(0.3 0.012 250);">Kies eerst een type uit de beschikbare voorselectie, bijvoorbeeld <em>Big bag</em>.</p>
+          <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: oklch(0.3 0.012 250);">Vul vervolgens het aantal in of klik op een van de voorgestelde aantallen en klik op <strong style="font-weight: 600;">Toevoegen</strong>. De emballage verschijnt daarna in de lijst.</p>
+          <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: oklch(0.45 0.012 250);">Bij sommige typen wordt aanvullende informatie gevraagd. Bij overige halve bierkratten kan bijvoorbeeld ook het aantal flesjes worden ingevuld.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: clamp(20px, 3vw, 26px);">
+          <h3 style="margin: 0 0 12px; font-size: 19px; font-weight: 600;">Retouren</h3>
+          <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: oklch(0.3 0.012 250);">Vul een omschrijving in, bijvoorbeeld <em>Airco-units</em>.</p>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: oklch(0.3 0.012 250);">Vul daarnaast het aantal in en klik op <strong style="font-weight: 600;">Toevoegen</strong>. Het retourartikel verschijnt vervolgens in de lijst.</p>
+        </div>
+      </div>
+
+      <h3 style="margin: 0 0 12px; font-size: 20px; font-weight: 600;">Volgende ladingdrager of sluiten</h3>
+      <p style="margin: 0 0 12px; font-size: 16.5px; line-height: 1.7; color: oklch(0.3 0.012 250); max-width: 64ch;">Wanneer een ladingdrager compleet is, zijn er twee mogelijkheden. Klik op <strong style="font-weight: 600;">Volgende ladingdrager</strong> om de huidige ladingdrager op te slaan en direct een nieuwe aan te maken. Klik op <strong style="font-weight: 600;">Sluiten</strong> wanneer u geen nieuwe ladingdrager wilt toevoegen; u keert dan terug naar het zendingformulier.</p>
+      <p style="margin: 0 0 26px; font-size: 16.5px; line-height: 1.7; color: oklch(0.42 0.012 250); max-width: 64ch;">In het zendingformulier is zichtbaar hoeveel ladingdragers zijn toegevoegd.</p>
+
+      <div style="display: flex; gap: 14px; padding: 20px; border-radius: 14px; background: oklch(0.97 0.04 85); border: 1px solid oklch(0.87 0.07 80);">
+        <span style="flex: none; width: 6px; border-radius: 3px; background: #f49200;"></span>
+        <div>
+          <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 600; color: oklch(0.35 0.09 60);">Waarschuwingen</h4>
+          <p style="margin: 0 0 10px; font-size: 16px; line-height: 1.65; color: oklch(0.35 0.05 60); max-width: 60ch;">Wanneer bij een ladingdrager nog informatie ontbreekt, wordt een waarschuwingssymbool weergegeven. Dit gebeurt bijvoorbeeld wanneer nog geen lading is toegevoegd, of wanneer een verplichte foto ontbreekt.</p>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: oklch(0.35 0.05 60);">Open de betreffende ladingdrager om de ontbrekende gegevens aan te vullen.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="indienen" style="padding: clamp(28px, 4vw, 44px) 0; border-top: 1px solid oklch(0.91 0.008 250); scroll-margin-top: 84px;">
+      <span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.08em; color: #a35f00; margin-bottom: 10px;">06</span>
+      <h2 style="margin: 0 0 18px; font-size: clamp(24px, 3.6vw, 33px); font-weight: 700; letter-spacing: -0.015em;">Zending indienen</h2>
+      <p style="margin: 0 0 20px; font-size: 16.5px; line-height: 1.7; color: oklch(0.3 0.012 250); max-width: 64ch;">Wanneer het formulier en alle ladingdragers compleet zijn, klikt u op <strong style="font-weight: 600;">Indienen</strong>. Na het indienen keert u terug naar het zendingoverzicht. Hier is onder andere zichtbaar:</p>
+      <ul style="list-style: none; margin: 0 0 28px; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px;">
+        <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: #009ddc;"></span>op welke datum en tijd de zending is ingediend;</li>
+        <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: 0 0 auto; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: rgb(0, 157, 220);"></span>in welke ISO-week de zending valt;</li>
+        <li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.6; color: oklch(0.3 0.012 250);"><span style="flex: none; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: #009ddc;"></span>wat de huidige status van de zending is.</li>
+      </ul>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px;">
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: clamp(20px, 3vw, 26px);">
+          <h3 style="margin: 0 0 12px; font-size: 19px; font-weight: 600;">Zending aanpassen</h3>
+          <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: oklch(0.3 0.012 250);">Een ingediende zending kan tot <strong style="font-weight: 600;">48 uur</strong> na het indienen nog worden aangepast.</p>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: oklch(0.42 0.012 250);">Na deze periode wordt de zending vergrendeld. Wijzigingen kunnen dan alleen nog door een beheerder van de applicatie worden uitgevoerd.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: clamp(20px, 3vw, 26px);">
+          <h3 style="margin: 0 0 12px; font-size: 19px; font-weight: 600;">Samen aan een zending werken</h3>
+          <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: oklch(0.3 0.012 250);">Een zending hoeft niet door één gebruiker volledig te worden afgerond. Het formulier kan bijvoorbeeld in twee stappen worden ingevuld:</p>
+          <ol style="margin: 0 0 12px; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px;">
+            <li style="display: flex; gap: 12px; font-size: 15.5px; line-height: 1.6; color: oklch(0.35 0.012 250);"><span style="flex: none; width: 22px; height: 22px; border-radius: 6px; background: #e5f5fc; color: #00719e; display: grid; place-items: center; font-size: 12.5px; font-weight: 700;">1</span>Een vloermedewerker voegt de lading toe en maakt foto's van de ladingdrager.</li>
+            <li style="display: flex; gap: 12px; font-size: 15.5px; line-height: 1.6; color: oklch(0.35 0.012 250);"><span style="flex: none; width: 22px; height: 22px; border-radius: 6px; background: #e5f5fc; color: #00719e; display: grid; place-items: center; font-size: 12.5px; font-weight: 700;">2</span>Een manager voegt later de vrachtbrief en vrachtspecificatie toe en dient de zending in.</li>
+          </ol>
+          <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: oklch(0.45 0.012 250);">Ook na het indienen kunnen deze gegevens nog worden aangepast, zolang de termijn van 48 uur niet is verstreken.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="zoeken" style="padding: clamp(28px, 4vw, 44px) 0; border-top: 1px solid oklch(0.91 0.008 250); scroll-margin-top: 84px;">
+      <span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.08em; color: #a35f00; margin-bottom: 10px;">07</span>
+      <h2 style="margin: 0 0 18px; font-size: clamp(24px, 3.6vw, 33px); font-weight: 700; letter-spacing: -0.015em;">Zendingen zoeken, filteren en sorteren</h2>
+      <p style="margin: 0 0 20px; font-size: 16.5px; line-height: 1.7; color: oklch(0.3 0.012 250); max-width: 64ch;">In het zendingoverzicht kunnen zendingen worden gefilterd en gesorteerd. Dit kan onder andere op:</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px;">
+        <span style="padding: 8px 14px; border-radius: 999px; background: #e5f5fc; color: #00719e; font-size: 15px; font-weight: 500;">winkelcode</span>
+        <span style="padding: 8px 14px; border-radius: 999px; background: #e5f5fc; color: #00719e; font-size: 15px; font-weight: 500;">naam medewerker</span>
+        <span style="padding: 8px 14px; border-radius: 999px; background: #e5f5fc; color: #00719e; font-size: 15px; font-weight: 500;">status</span>
+        <span style="padding: 8px 14px; border-radius: 999px; background: #e5f5fc; color: #00719e; font-size: 15px; font-weight: 500;">organisatieniveau (groep of winkel)</span>
+        <span style="padding: 8px 14px; border-radius: 999px; background: #e5f5fc; color: #00719e; font-size: 15px; font-weight: 500;">jaar</span>
+        <span style="padding: 8px 14px; border-radius: 999px; background: #e5f5fc; color: #00719e; font-size: 15px; font-weight: 500;">weeknummer</span>
+      </div>
+      <p style="margin: 0; font-size: 16.5px; line-height: 1.7; color: oklch(0.42 0.012 250); max-width: 64ch;">Hiermee kan snel een specifieke zending of een selectie van zendingen worden gevonden.</p>
+    </section>
+
+    <section id="account" style="padding: clamp(28px, 4vw, 44px) 0; border-top: 1px solid oklch(0.91 0.008 250); scroll-margin-top: 84px;">
+      <span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.08em; color: #a35f00; margin-bottom: 10px;">08</span>
+      <h2 style="margin: 0 0 18px; font-size: clamp(24px, 3.6vw, 33px); font-weight: 700; letter-spacing: -0.015em;">Account</h2>
+      <p style="margin: 0 0 24px; font-size: 16.5px; line-height: 1.7; color: oklch(0.3 0.012 250); max-width: 64ch;">In het accountoverzicht zijn de gegevens van de ingelogde gebruiker zichtbaar. Hier zijn onder andere twee acties beschikbaar.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: 24px;">
+          <h3 style="margin: 0 0 10px; font-size: 18px; font-weight: 600;">Wachtwoord wijzigen</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: oklch(0.3 0.012 250);">Klik op het pennetje om het wachtwoord te wijzigen.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: 24px;">
+          <h3 style="margin: 0 0 10px; font-size: 18px; font-weight: 600;">Account verwijderen</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: oklch(0.3 0.012 250);">Een account kan ook worden verwijderd. Dit is definitief: het gebruikersaccount wordt in verband met privacyregels daadwerkelijk uit VAHFR verwijderd.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="instellingen" style="padding: clamp(28px, 4vw, 44px) 0; border-top: 1px solid oklch(0.91 0.008 250); scroll-margin-top: 84px;">
+      <span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.08em; color: #a35f00; margin-bottom: 10px;">09</span>
+      <h2 style="margin: 0 0 18px; font-size: clamp(24px, 3.6vw, 33px); font-weight: 700; letter-spacing: -0.015em;">Instellingen</h2>
+      <p style="margin: 0 0 26px; font-size: 16.5px; line-height: 1.7; color: oklch(0.3 0.012 250); max-width: 64ch;">In de module <strong style="font-weight: 600;">Instellingen</strong> kan een accountmanager bepalen hoe bepaalde onderdelen van VAHFR binnen het account worden gebruikt.</p>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: clamp(20px, 3vw, 26px);">
+          <h3 style="margin: 0 0 10px; font-size: 18.5px; font-weight: 600;">Vrachtbrief en specificatiedocument verplicht stellen</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: oklch(0.3 0.012 250); max-width: 62ch;">Het uploaden van een vrachtbrief en een specificatiedocument kan verplicht worden gesteld. Wanneer deze instelling is ingeschakeld, moeten deze documenten aan de zending worden toegevoegd voordat de zending volledig kan worden afgerond.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: clamp(20px, 3vw, 26px);">
+          <h3 style="margin: 0 0 10px; font-size: 18.5px; font-weight: 600;">Foto bij ladingdrager verplicht stellen</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: oklch(0.3 0.012 250); max-width: 62ch;">Per account kan worden ingesteld dat bij iedere ladingdrager minimaal één foto moet worden toegevoegd. Een ladingdrager kan dan niet als compleet worden beschouwd zolang de verplichte foto ontbreekt.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: clamp(20px, 3vw, 26px);">
+          <h3 style="margin: 0 0 10px; font-size: 18.5px; font-weight: 600;">E-mailadres voor rapportages</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: oklch(0.3 0.012 250); max-width: 62ch;">In de instellingen kan een e-mailadres worden opgegeven waarnaar rapportages vanuit VAHFR worden verzonden.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: clamp(20px, 3vw, 26px);">
+          <h3 style="margin: 0 0 10px; font-size: 18.5px; font-weight: 600;">Beschikbare typen fust instellen</h3>
+          <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: oklch(0.3 0.012 250); max-width: 62ch;">De accountmanager bepaalt welke typen fust een vloermedewerker in de applicatie kan selecteren. VAHFR bevat standaard een selectie van veelgebruikte soorten fust; deze lijst kan per account worden aangepast.</p>
+          <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: oklch(0.3 0.012 250); max-width: 62ch;">Aan een type fust kunnen één of meerdere standaardaantallen worden gekoppeld. Deze aantallen worden tijdens het invoeren als snelle keuzemogelijkheden getoond, zodat een vloermedewerker veelgebruikte aantallen direct kan selecteren. Het blijft altijd mogelijk om hiervan af te wijken en handmatig een ander aantal in te voeren.</p>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: oklch(0.42 0.012 250); max-width: 62ch;">Naast de standaardtypen kan een accountmanager ook eigen fust- of materiaaltypen toevoegen. Per toegevoegd type kan direct een reeks standaardaantallen worden ingesteld, gescheiden door een komma (bijv. 12,24,36). Deze worden op dezelfde manier als snelle keuzemogelijkheden beschikbaar gesteld aan de vloermedewerkers.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="help" style="padding: clamp(28px, 4vw, 44px) 0 clamp(40px, 6vw, 72px); border-top: 1px solid oklch(0.91 0.008 250); scroll-margin-top: 84px;">
+      <span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.08em; color: #a35f00; margin-bottom: 10px;">10</span>
+      <h2 style="margin: 0 0 18px; font-size: clamp(24px, 3.6vw, 33px); font-weight: 700; letter-spacing: -0.015em;">Help</h2>
+      <p style="margin: 0 0 24px; font-size: 16.5px; line-height: 1.7; color: oklch(0.3 0.012 250); max-width: 64ch;">Onder <strong style="font-weight: 600;">Help</strong> vindt u informatie over wijzigingen en nieuwe functies in de meest recente versies van VAHFR. Vanuit dit onderdeel kunt u daarnaast een probleem melden of een suggestie, vraag of andere feedback doorgeven.</p>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <a href="https://tally.so/r/jaVo4J" target="_blank" rel="noopener" style="flex: 1 1 200px; display: flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 20px; border-radius: 12px; background: #009ddc; color: #fff; font-size: 16px; font-weight: 600; text-align: center;" style-hover="background: #0082b8; color: #fff; text-decoration: none;">Bug of fout melden</a>
+        <a href="https://tally.so/r/kdPNb6" target="_blank" rel="noopener" style="flex: 1 1 200px; display: flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 20px; border-radius: 12px; background: #f49200; color: #fff; font-size: 16px; font-weight: 600; text-align: center;" style-hover="background: #d67f00; color: #fff; text-decoration: none;">Vraag of suggestie</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="border-top: 1px solid oklch(0.9 0.008 250); background: oklch(0.97 0.008 95);">
+    <div style="max-width: 900px; margin: 0 auto; padding: 32px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; align-items: start;">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 14px;">
+        <img src="uploads/Logo-36f96fdc.png" alt="VAHFR" style="height: 34px; width: auto; display: block;">
+      </div>
+      <div style="font-size: 13.5px; line-height: 1.7; color: oklch(0.45 0.012 250);">
+        Support<br><a href="mailto:vahfr@outlinesolutions.nl">vahfr@outlinesolutions.nl</a><br><a href="tel:0853695022">085 - 3695 022</a>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px;">
+        <a href="https://www.outlinesolutions.nl" target="_blank" rel="noopener" style="display: inline-block;"><img src="https://static.wixstatic.com/media/c38ff0_12f937b2c37245a9a436b7e0bab3c73c~mv2.png/v1/fill/w_184,h_27,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/_edited.png" alt="Outline Solutions" style="height: 22px; width: auto; display: block;"></a>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 1.6; color: oklch(0.58 0.012 250);">Handleiding VAHFR<br>© {{ year }} Outline Solutions</div>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return { year: new Date().getFullYear() };
+  }
+}
+</script>
+</body>
+</html>
