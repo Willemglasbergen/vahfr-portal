@@ -31,6 +31,9 @@ jobs:
           # client-side via support.js, so no build step is needed here -
           # publishing it as index.html is enough to pick up any edit.
           cp "VAHFR Portaal.dc.html" dist/index.html
+          # VAHFR Handleiding.dc.html is loaded at runtime as a sibling
+          # component via a relative fetch, so it must be published too.
+          cp "VAHFR Handleiding.dc.html" dist/
           cp support.js dist/support.js
           cp -R uploads dist/uploads
           [ -f CNAME ] && cp CNAME dist/CNAME
