@@ -59,7 +59,7 @@
           Ga naar de app
           <span style="font-size: 18px; line-height: 1;">→</span>
         </a>
-        <a href="#uitnodiging" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 22px; border-radius: 12px; border: 1px solid oklch(0.86 0.01 250); background: #fff; color: oklch(0.3 0.012 250); font-size: 16px; font-weight: 500;" style-hover="border-color: oklch(0.7 0.02 250); color: oklch(0.2 0.012 250); text-decoration: none;">Nog geen uitnodiging?</a>
+        
         <button type="button" onClick="{{ goManual }}" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 22px; border-radius: 12px; border: 1px solid oklch(0.86 0.01 250); background: #fff; color: oklch(0.3 0.012 250); font-family: inherit; font-size: 16px; font-weight: 500; cursor: pointer;" style-hover="border-color: oklch(0.7 0.02 250); color: oklch(0.2 0.012 250);">Handleiding</button>
       </div>
     </section>
@@ -128,23 +128,10 @@
       </div>
     </section>
 
-    <section id="uitnodiging" style="max-width: 1040px; margin: 0 auto; padding: clamp(28px, 4vw, 48px) 20px; scroll-margin-top: 80px;">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: center; background: #00394f; border-radius: 18px; padding: clamp(26px, 4vw, 40px); color: oklch(0.96 0.006 250);">
-        <div>
-          <h2 style="margin: 0 0 10px; font-size: clamp(21px, 3vw, 27px); font-weight: 700; letter-spacing: -0.01em; color: #fff;">Uitnodiging aanvragen</h2>
-          <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #b8d9e6; max-width: 46ch;">Nog geen toegang? Vraag je uitnodiging aan via je franchisenemer of stuur ons een bericht met je naam, winkel en e-mailadres.</p>
-        </div>
-        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-          <a href="mailto:vahfr@outlinesolutions.nl?subject=Uitnodiging%20VAHFR%20app" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 22px; border-radius: 11px; background: #fff; color: #00394f; font-size: 16px; font-weight: 600;" style-hover="background: oklch(0.93 0.008 250); color: #002b3c; text-decoration: none;">Uitnodiging aanvragen</a>
-          <a href="tel:0853695022" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 22px; border-radius: 11px; border: 1px solid #2b6a85; color: #fff; font-size: 16px; font-weight: 500;" style-hover="border-color: #fff; color: #fff; text-decoration: none;">085 - 3695 022</a>
-        </div>
-      </div>
-    </section>
-
     <section id="vragen" style="max-width: 1040px; margin: 0 auto; padding: clamp(28px, 4vw, 48px) 20px; scroll-margin-top: 80px;">
       <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 28px;">
         <h2 style="margin: 0; font-size: clamp(22px, 3.2vw, 30px); font-weight: 700; letter-spacing: -0.01em;">Veelgestelde vragen</h2>
-        <button type="button" onClick="{{ goManual }}" style="border: none; background: none; padding: 0; font-family: inherit; font-size: 15.5px; font-weight: 500; color: #009ddc; cursor: pointer;" style-hover="color: #00719e;">Bekijk de volledige handleiding &rarr;</button>
+        <button type="button" onClick="{{ goManual }}" style="border: none; background: none; padding: 0; font-family: inherit; font-size: 15.5px; font-weight: 500; color: #009ddc; cursor: pointer;" style-hover="color: #00719e;">Bekijk de volledige handleiding →</button>
       </div>
       <div style="display: flex; flex-direction: column; gap: 10px;">
         <details style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 14px; padding: 4px 20px;">
@@ -235,7 +222,7 @@
 <div style="min-height: 100vh; display: flex; flex-direction: column;">
   <div style="position: sticky; top: 0; z-index: 20; background: oklch(0.985 0.006 95 / 0.94); backdrop-filter: blur(10px); border-bottom: 1px solid oklch(0.9 0.008 250);">
     <div style="max-width: 900px; margin: 0 auto; padding: 12px 20px;">
-      <button type="button" onClick="{{ goPortal }}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 16px; border-radius: 10px; border: 1px solid oklch(0.88 0.008 250); background: #fff; color: oklch(0.3 0.012 250); font-family: inherit; font-size: 14.5px; cursor: pointer;" style-hover="border-color: #009ddc; color: #00719e;">&larr; Terug naar het portaal</button>
+      <button type="button" onClick="{{ goPortal }}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 16px; border-radius: 10px; border: 1px solid oklch(0.88 0.008 250); background: #fff; color: oklch(0.3 0.012 250); font-family: inherit; font-size: 14.5px; cursor: pointer;" style-hover="border-color: #009ddc; color: #00719e;">← Terug naar het portaal</button>
     </div>
   </div>
   <dc-import name="VAHFR Handleiding" hint-size="100%,600px"></dc-import>
