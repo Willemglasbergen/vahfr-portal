@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: oklch(0.985 0.006 95); color: oklch(0.23 0.012 250); font-family: "Hamburg", "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #009ddc; text-decoration: none; }
+  a:hover { color: #00719e; text-decoration: underline; }
+</style>
+</helmet>
+<div style="min-height: 100vh; display: flex; flex-direction: column;">
+
+  <header style="border-bottom: 1px solid oklch(0.9 0.008 250);">
+    <div style="max-width: 900px; margin: 0 auto; padding: 14px 20px;">
+      <img src="uploads/vahfr_logo_transparant_928.png" alt="VAHFR" style="height: 38px; width: auto; display: block;" />
+    </div>
+  </header>
+
+  <main style="flex: 1; max-width: 900px; margin: 0 auto; padding: clamp(48px, 9vw, 110px) 20px clamp(40px, 6vw, 80px); width: 100%; box-sizing: border-box;">
+    <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: oklch(0.97 0.04 85); color: oklch(0.42 0.09 60); font-size: 12.5px; font-weight: 500; margin-bottom: 22px;">
+      <span style="width: 6px; height: 6px; border-radius: 50%; background: #f49200;"></span>
+      Onderhoud
+    </div>
+    <h1 style="margin: 0 0 18px; font-size: clamp(32px, 6vw, 52px); line-height: 1.07; letter-spacing: -0.02em; font-weight: 700; text-wrap: pretty; max-width: 22ch;">We werken even aan de&nbsp;app</h1>
+    <p style="margin: 0 0 36px; font-size: clamp(16px, 2.2vw, 19px); line-height: 1.6; color: oklch(0.42 0.012 250); max-width: 56ch; text-wrap: pretty;">VAHFR is tijdelijk niet beschikbaar vanwege onderhoud. Je registraties zijn veilig opgeslagen en zodra we klaar zijn kun je weer normaal inloggen.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-bottom: 36px;">
+      <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: 24px;">
+        <h2 style="margin: 0 0 10px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(0.55 0.012 250);">Verwacht weer online</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: oklch(0.28 0.012 250);">{{ expected }}</p>
+      </div>
+      <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: 24px;">
+        <h2 style="margin: 0 0 10px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(0.55 0.012 250);">Je gegevens</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: oklch(0.28 0.012 250);">Alle ingediende zendingen blijven bewaard. Er gaat niets verloren.</p>
+      </div>
+      <div style="background: #fff; border: 1px solid oklch(0.91 0.008 250); border-radius: 16px; padding: 24px;">
+        <h2 style="margin: 0 0 10px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(0.55 0.012 250);">Urgent?</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: oklch(0.28 0.012 250);">Bel ons op <a href="tel:0853695022">085 - 3695 022</a> op werkdagen tussen 09:00 en 17:00.</p>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+      <button type="button" onClick="{{ reload }}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 12px; border: none; background: #009ddc; color: #fff; font-family: inherit; font-size: 16.5px; font-weight: 600; cursor: pointer; box-shadow: 0 6px 18px rgba(0, 157, 220, 0.3);" style-hover="background: #0082b8;">Opnieuw proberen</button>
+      <a href="mailto:vahfr@outlinesolutions.nl" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 22px; border-radius: 12px; border: 1px solid oklch(0.86 0.01 250); background: #fff; color: oklch(0.3 0.012 250); font-size: 16px; font-weight: 500;" style-hover="border-color: oklch(0.7 0.02 250); color: oklch(0.2 0.012 250); text-decoration: none;">Support mailen</a>
+    </div>
+  </main>
+
+  <footer style="border-top: 1px solid oklch(0.9 0.008 250); background: oklch(0.97 0.008 95);">
+    <div style="max-width: 900px; margin: 0 auto; padding: 32px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; align-items: start;">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 14px;">
+        <img src="uploads/vahfr_logo_transparant_928.png" alt="VAHFR" style="height: 34px; width: auto; display: block;" />
+      </div>
+      <div style="font-size: 13.5px; line-height: 1.7; color: oklch(0.45 0.012 250);">
+        Support<br /><a href="mailto:vahfr@outlinesolutions.nl">vahfr@outlinesolutions.nl</a><br /><a href="tel:0853695022">085 - 3695 022</a>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px;">
+        <a href="https://www.outlinesolutions.nl" target="_blank" rel="noopener" style="display: inline-block;"><img src="https://static.wixstatic.com/media/c38ff0_12f937b2c37245a9a436b7e0bab3c73c~mv2.png/v1/fill/w_184,h_27,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/_edited.png" alt="Outline Solutions" style="height: 22px; width: auto; display: block;" /></a>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 1.6; color: oklch(0.58 0.012 250);">VAHFR &middot; onderhoud<br />&copy; {{ year }} Outline Solutions</div>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;expected&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Vandaag rond 17:00 uur&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      expected: this.props.expected ?? "Vandaag rond 17:00 uur",
+      reload: () => window.location.reload(),
+      year: new Date().getFullYear()
+    };
+  }
+}
+</script>
+</body>
+</html>
