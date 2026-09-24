@@ -218,7 +218,7 @@
 </div>
 </sc-if>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;appUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;App&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;appUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://vahfr.app&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;App&quot;}}">
 class Component extends DCLogic {
   state = { view: "portal" };
   go(view) {
@@ -231,7 +231,7 @@ class Component extends DCLogic {
       showManual: this.state.view === "manual",
       goManual: () => this.go("manual"),
       goPortal: () => this.go("portal"),
-      appUrl: url || "#",
+      appUrl: url || "https://vahfr.app",
       year: new Date().getFullYear()
     };
   }
